@@ -26,7 +26,16 @@
                     <input type="text">
                 </div>
             </fieldset>
-            <input type="submit" value="送信" onclick="send()">
+            <input type="submit" value="送信" onclick="ques()">
+            <script>
+                function ques(){
+                    if(window.confirm("申し込みますか？")){
+                    ;
+                    }else{
+                        send();
+                    }
+                }
+            </script>
             <script>
                 function send(){
                     alert("送信できませんでした")
