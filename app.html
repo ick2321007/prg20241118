@@ -29,8 +29,11 @@
             <input type="submit" value="送信" onclick="ques()">
             <script>
                 function ques(){
-                    if(window.confirm("この内容で申し込みますか？")){
-                    ;
+                    if(window.confirm("申し込みますか？")){
+                        alert("完了しました")
+                        setTimeout(() => {
+                            location.href ="./index.html";
+                        }, 3000);
                     }else{
                         send();
                     }
